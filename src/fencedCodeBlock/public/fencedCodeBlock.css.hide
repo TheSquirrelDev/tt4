@@ -1,0 +1,86 @@
+.fc-header {
+  box-sizing: content-box;
+  background-color: var(--bs-border-color);
+  color: var(--bs-secondary-color);
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  border-bottom: 0;
+  margin-top: 0;
+  min-height: 30px;
+}
+
+.fc-header .language {
+  padding: 2px 16px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.fc-copy {
+  padding: 2px 10px;
+  background-color: transparent;
+  border: .125rem solid var(--bs-border-color);
+  border-left-width: 1px;
+  color: var(--bs-secondary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  line-height: normal;
+}
+
+.fc-copy:hover {
+  background-color: var(--bs-body-bg);
+}
+
+.fc-copy:focus-visible {
+  z-index: 3;
+}
+
+.fc-copy > .bi-copy {
+  margin-inline-end: .5rem;
+}
+
+.fc-copy .successful-copy-alert {
+  background-color: var(--bs-success);
+  color: var(--bs-success-border-subtle);
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  inset-block-end: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fc-copy .successful-copy-alert.is-transparent {
+  opacity: 0;
+  transition: 500ms opacity ease-in-out;
+}
+
+.fc-copy .successful-copy-alert > .bi-check-lg {
+  font-size: x-large;
+}
+
+.fc pre {
+  display: flex;
+  border: 1px solid var(--bs-border-color);
+  margin: 0;
+}
+
+.fc pre > code {
+  width: 100%;
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.margin-right-xxs {
+  margin-inline-end: .5rem !important;
+}
+
+.font-size-lg {
+  font-size: var(--bs-body-font-size) !important;
+}
